@@ -1,0 +1,81 @@
+/* General */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 600px;
+    background: url('image.png') center;
+    position: relative;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Productos */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.catalog-header {
+    height: 50vh;
+    background: url('catalogo.webp');
+    position: relative;
+}
+
+.catalog-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.catalog-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Productos */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Hover moderno para botones */
+.btn-warning {
+    transition: transform 0.3s ease;
+}
+.btn-warning:hover {
+    transform: translateY(-5px);
+}
+
+/* Tarjetas interactivas */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffc107;
+}

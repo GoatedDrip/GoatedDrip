@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Goated Drip</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .hero-section {
+            height: 40vh;
+            background: url('imgs/banner.png') center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .contact-card {
+            background-color: #111;
+            color: #b5b5b5;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .btn-warning {
+            border-radius: 20px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 0, 0.3);
+        }
+
+        a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        .btn-primary {
+        background-color: #E1306C; /* Azul Instagram */
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(193, 53, 132, 0.3);
+        transition: transform 0.3s ease;
+    }
+    .btn-primary:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(193, 53, 132, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <!-- Imagen antes del texto GOATED DRIP -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="banner.png" alt="Logo" style="height: 100px; margin-right: 10px;">
+                <span class="fw-bold text-warning">GOATED DRIP</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Encabezado -->
+    <section class="hero-section d-flex align-items-center justify-content-center text-white">
+        <div class="container hero-content">
+            <h1 class="display-4 fw-bold text-uppercase">Contáctanos</h1>
+            <p class="lead">Kicks, Streetwear y mucho Drip 💧</p>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Tarjeta 1: Información de Contacto -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card contact-card text-center p-4">
+                        <h5 class="fw-bold mb-3 text-warning">Información de Contacto</h5>
+                        <p><strong>Showroom Físico:</strong> Heredia (Cita Previa)</p>
+                        <p><strong>Envíos:</strong> A todo el país 📦</p>
+                        <p><strong>Entrega:</strong> Inmediata y Contra Pedido 🛸</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Contacto con Instagram -->
+                <div class="col-lg-8 col-md-6">
+                    <div class="card contact-card p-5">
+                        <h5 class="fw-bold text-warning mb-4">📸 Conéctate con Nosotros en Instagram</h5>
+                        <p class="text-center fw-bold mb-4" style="font-size: 1.2rem; color: #ffc107;">
+                            💬 ¡Envíanos un mensaje directo y descubre el mejor drip! 🚀
+                        </p>
+                        <div class="text-center">
+                            <a href="https://www.instagram.com/goatedrip.cr" target="_blank" 
+                            class="btn btn-primary w-100 fw-bold py-3" style="font-size: 1.2rem;">
+                                Enviar Mensaje por Instagram 💬
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="py-5">
+        <div class="container">
+            <h5 class="text-center fw-bold text-warning mb-4">Encuéntranos en Heredia</h5>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Heredia,%20Costa%20Rica&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="400px" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
